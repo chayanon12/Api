@@ -12,18 +12,10 @@ oracledb.initOracleClient({
   });
 
 const CUSR = {
-  user: process.env.USER_CUSR,
-  password: process.env.PASS_CUSR,
-  connectString: process.env.CON_CUSR,
+  user:'cusr',
+  password: 'cusr',
+  connectString: 'TCIX01',
 };
-// console.log(CUSR,"-------------------------------------------------------------")
-
-// const CUSR = {
-//   user: import.meta.env.VITE_USER_CUSR,
-//   password: import.meta.env.VITE_PASS_CUSR,
-//   connectString: import.meta.env.VITE_CON_CUSR,
-// };
-// // console.log(CUSR,"-------------------------------------------------------------")
 
 // Login
 module.exports.login = async function (req, res) {
